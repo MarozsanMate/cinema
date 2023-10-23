@@ -32,7 +32,7 @@ class Filmek:
         return f'{self.cim}, {self.__hossz}, {self._korhat}'
 
     def __str__(self):
-        return f"{self.cim}: {self.__hossz} perces, {'korhatáros' if self._korhat else 'nem korhatáros'}"
+        return f"{self.cim}: {self.__hossz} perces, {'korhataros' if self._korhat else 'nem korhatáros'}"
 
     def __eq__(self, other):
         if not isinstance(other, Filmek):

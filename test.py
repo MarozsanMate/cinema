@@ -10,9 +10,9 @@ if __name__ == '__main__':
             raise ValueError
     except Exception as exp:
         print(exp)
-    n = int(sys.argv[1])
+    nk = int(sys.argv[1])
     film = []
-    for _ in range(n):
+    for _ in range(nk):
         c = input().split(';')
         kh = c[2] == 'True'
         if (len(c)==3):
