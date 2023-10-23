@@ -36,7 +36,7 @@ class Filmek:
 
     def __eq__(self, other):
         if not isinstance(other, Filmek):
-            return NotImplemented('Nem létezik ilyen!')
+            return NotImplemented('Nem letezik ilyen!')
         return self.cim == other.cim and self.__hossz == other.__hossz and self._korhat == other._korhat
 
     def __lt__(self, other):

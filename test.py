@@ -3,16 +3,16 @@ from model import Filmek,Sorozatok
 if __name__ == '__main__':
     try:
         if (len(sys.argv) < 2): raise ValueError
-        n = int(sys.argv[1])
+        nke = int(sys.argv[1])
         if not sys.argv[1].isnumeric():
             raise ValueError
-        if(n <= 0):
+        if(nke <= 0):
             raise ValueError
     except Exception as exp:
         print(exp)
-    nk = int(sys.argv[1])
+    nke = int(sys.argv[1])
     film = []
-    for _ in range(nk):
+    for _ in range(nke):
         c = input().split(';')
         kh = c[2] == 'True'
         if (len(c)==3):
